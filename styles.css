@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0  ;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.step {
+    margin-bottom: 20px;
+}
+
+.step h2 {
+    margin-bottom: 10px;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: "Poppins",sans-serif;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.summary h2 {
+    margin-bottom: 10px;
+}
+#bookButton{
+    max-width:500px;
+    margin-top: 50px;
+}
+
+.logo{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.login{
+    max-width: 70px;
+    border: none;
+    border-radius: 12px;
+    background-color: #ccc;
+    color: black;
+}
+.login:hover{
+    background-color:#ccc;
+}
+
+.signup{
+    max-width: 70px;
+    border: none;
+    border-radius: 12px;
+}
+.btn{
+    margin-left: 1350px;
+    margin-top: -50px;
+}
+header{
+
+
+    padding: 11px;
+}
+#date{
+    background-color: hsl(340, 2%, 95%);
+    max-width: 580px;
+}
+
+#startTime{
+    max-width: 100px;
+    background-color: hsl(340, 2%, 95%);
+}
+#endTime{
+    max-width: 100px;
+    background-color: hsl(340, 2%, 95%);
+}
+.end{
+    position: absolute;
+    margin-top: -83px;
+    margin-left: 200px;
+}
+textarea{
+    resize: none;
+    max-width: 60%;
+    height: 100px;
+    background-color: hsl(340, 2%, 95%);
+    font-family: "Poppins",sans-serif;
+}
+.progress-container {
+    width: 50%;
+    background-color:transparent;
+    margin-bottom: 0px;
+    margin-left: 370px;
+    border-radius: 10px;
+}
+.progress-segment {
+    height: 10px;
+    margin-bottom: -10px;
+    width: 0;
+    background-color: transparent;
+    transition: width 0.5s ease;
+    border-radius: 10px;
+    
+}
+#category{
+    max-width: 600px;
+    height: 50px;
+    background-color: hsl(340, 2%, 95%);
+}
+#topic{
+    max-width: 580px;
+    height: 50px;
+    font-size: small;
+    background-color: hsl(340, 2%, 95%);
+}
+.add{
+    margin-right : 35%;
+}
+input[type="text"]{
+    font-family: "Poppins",sans-serif;
+}
+input[type="time"]{
+    font-family: "Poppins",sans-serif;
+}
+input[type="date"]{
+    font-family: "Poppins",sans-serif;
+}
+
+select{
+    font-family: "Poppins",sans-serif;
+}
+.two{
+    margin-left: 300px;
+    margin-top: -140px;
+}
+
+#nextButton{
+   background-color: transparent;
+   border: 1.5px solid black;
+   color: black;
+}
+#nextButton:hover{
+    transition: ease-in-out 0.2s;
+   background-color: black;
+   border: 1px solid black;
+   color: white;
+}
+.logo{
+    max-width: 120px;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 20px;
+}
+.a{
+    font-size: xx-large;
+    color: transparent;
+}

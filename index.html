@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Page</title>
+    <link rel="stylesheet" href="demo class.css">
+</head>
+<body>
+    <header>
+        <img src="./logo1.png" alt="logo" class="logo">
+        <h1 class="a">hello</h1>
+        <div class="btn">
+            <button class="signup">Sign up</button>
+            <button class="login">Login</button>
+        </div>
+    </header>
+    <hr>
+
+    <div class="progress-container">
+        <div class="progress-segment" id="step1-bar"></div>
+        <div class="progress-segment" id="step2-bar"></div>
+        <div class="progress-segment" id="step3-bar"></div>
+        <div class="progress-segment" id="step4-bar"></div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div id="step1" class="step active">
+            <h2>Step 1: What do you want to learn?</h2>
+            <br>
+            <p>Select a Category</p>
+            <select id="category" onchange="updateStepProgress()">
+                <option value="">Choose one...</option>
+                <option value="Top Courses">Top Courses</option>
+                <option value="Class 1-12">Class 1-12</option>
+                <option value="Law Exams">Law Exams</option>
+                <option value="Competitive Exams">Competitive Exams</option>
+                <option value="NEET Coaching">NEET Coaching</option>
+                <option value="Professional Courses">Professional Courses</option>
+            </select>
+            <br>
+            <br>
+            <p>What do you want to learn ?</p>
+            <input type="text" id="topic" placeholder="Algebra, Spanish, Python..." oninput="updateStepProgress()">
+        </div>
+        <br>
+
+        <div id="step2" class="step">
+            <h2>Step 2: When are you available?</h2>
+            <br>
+            <p>Select a date</p>
+            <input type="date" id="date" onchange="updateStepProgress()">
+            <br>
+            <br>
+            <p>Start time</p>
+            <input type="time" id="startTime" onchange="updateStepProgress()">
+            <div class="end">
+                <p>End time</p>
+                <input type="time" id="endTime" onchange="updateStepProgress()">
+            </div>
+        </div>
+        <br>
+
+        <div id="step3" class="step">
+            <h2>Step 3: Any additional preferences?</h2>
+            <br>
+            <p class="add">Add any additional details to help us match you with the right tutor</p>
+            <textarea id="preferences" onchange="updateStepProgress()"></textarea>
+        </div>
+
+        <div id="step4" class="summary">
+            <h2>Step 4: Confirm and book</h2><br>
+            <p><strong>Category:</strong> <span id="summaryCategory"></span></p><br><br>
+            <p><strong>Topic:</strong> <span id="summaryTopic"></span></p><br><br>
+            <div class="two">
+            <p><strong>Date:</strong> <span id="summaryDate"></span></p><br><br>
+            <p><strong>Time:</strong> <span id="summaryTime"></span></p>
+        </div>
+            <button id="bookButton">Book demo class</button>
+        
+        </div>
+        <br>
+
+    </div>
+
+    <script src="demo class.js"></script>
+</body>
+</html>
